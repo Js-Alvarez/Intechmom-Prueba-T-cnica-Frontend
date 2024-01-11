@@ -1,0 +1,22 @@
+*
+
+body{
+    background: black;
+}
+
+.contenedor{
+    background: rgba(200, 15, 15, 0.948);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta{
+    background: gold;
+    width: 20%;
+    margin:1%; 
+}
+
+p{
+    text-align: center;
+}
