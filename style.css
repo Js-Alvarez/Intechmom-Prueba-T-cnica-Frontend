@@ -1,41 +1,184 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
-    color: black;
+
 }
-.slider--inner{
-    width: 100%; 
+body {
+    width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     overflow: hidden;
-    background: green;
 }
 
-.contenedor{
-    width: 80%; 
-    padding: 2% 5%;
-    background: rgba(200, 15, 15, 0.948);
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   padding: 10px;
+    z-index: 10;
+    transition: 0.7s, box-shadow 0.7s;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+.menu li {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s;
+    font-size: 20px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+.nav li:hover {
+    background: #70E4F1;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+header{
+    margin-bottom: 20px;
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slider-container {
+    width: 75%;
+    background-color: rgba(51, 51, 51, 0.1);
+    padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.slider-content {
+    flex: 0 0 calc(24% - 20px); /* Se ajusta el ancho de las tarjetas para que haya 4 en una fila */
+    margin: 10px;
+}
+
+.card {
+    width: 85%;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.card-image {
+    height: 100px; 
+    width: 100px; 
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 auto;
-    
+    padding: 10px 14px;
 }
 
-.tarjeta{
-    width: 20%;
-    margin-bottom: 10%;
-    background: wheat;
-    border: 2px #000000 solid;
-    border-radius:5px;
-    text-align: center;  
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
 }
 
-.tarjeta img{
-    margin-top: 10px;
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(64, 112, 244);
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #fff;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070f4;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.description {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.button {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.button:hover {
+    background: #265df2;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 15px 10px;
+    }
+
+    .menu li {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .nav li:hover {
+        font-size: 16px;
+    }
 }
