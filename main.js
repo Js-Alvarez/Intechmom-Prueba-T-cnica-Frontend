@@ -40,3 +40,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+function buscarUsuario() {
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+    const tarjetasUsuarios = document.querySelectorAll('.card');
+
+    tarjetasUsuarios.forEach(tarjeta => {
+        const nombreUsuario = tarjeta.querySelector('.name').textContent.toLowerCase();
+
+        // Muestra la tarjeta si el término de búsqueda está en el nombre, de lo contrario, ocúltala
+        tarjeta.style.display = nombreUsuario.includes(searchTerm) ? 'block' : 'none';
+    });
+}

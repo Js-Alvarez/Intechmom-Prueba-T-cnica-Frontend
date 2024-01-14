@@ -22,6 +22,7 @@ body {
     padding: 10px;
     z-index: 10;
     transition: 0.7s, box-shadow 0.7s;
+    background: #496587;
 }
 
 .menu {
@@ -31,13 +32,15 @@ body {
 
 .menu li {
     text-decoration: none;
-    color: #496587;
+    color: #fff;
+    background: rgba(73, 101, 135, 0.8);
     letter-spacing: 2px;
     font-weight: 600;
     transition: all 0.3s;
     font-size: 20px;
     padding: 15px 20px;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
 .nav li:hover {
@@ -48,20 +51,45 @@ body {
 
 header {
     margin-bottom: 20px;
+    background: rgba(73, 101, 135, 0.8);
 }
 
 main {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #496587; 
+    margin-bottom:15px;
+    margin-top:10px ;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .slider-container {
-    width: 75%;
+    width: 90%;
     padding: 40px 0;
     display: flex;
     flex-wrap: wrap;
@@ -70,12 +98,13 @@ main {
 }
 
 .slider-content {
-    flex: 0 0 calc(24% - 20px); /* Se ajusta el ancho de las tarjetas para que haya 4 en una fila */
+    flex: 0 0 calc(25% - 20px); 
     margin: 10px;
 }
 
 .card {
-    width: 85%;
+    width: 100%;
+    height: 100%;
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
