@@ -129,6 +129,15 @@ button {
     padding: 10px 14px;
 }
 
+.card-content {
+    display: none; 
+}
+
+.card:hover .card-content {
+    display: flex; 
+}
+
+
 .image-content {
     position: relative;
     row-gap: 5px;
@@ -193,7 +202,7 @@ button {
 
 .description {
     font-size: 18px;
-    color: #707070;
+    color: #000;
     text-align: center;
 }
 

@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return card;
     }
     card.addEventListener('click', function() {
-        // Aquí puedes implementar la lógica para abrir el modal y mostrar la información detallada del usuario
+       
     });
 });
 
@@ -52,7 +52,7 @@ function buscarUsuario() {
     tarjetasUsuarios.forEach(tarjeta => {
         const nombreUsuario = tarjeta.querySelector('.name').textContent.toLowerCase();
 
-        // Muestra la tarjeta si el término de búsqueda está en el nombre, de lo contrario, ocúltala
+        
         tarjeta.style.display = nombreUsuario.includes(searchTerm) ? 'block' : 'none';
     });
 }
