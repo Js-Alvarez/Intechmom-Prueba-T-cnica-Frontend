@@ -1,1 +1,50 @@
-# Intechmom-Prueba-T-cnica-Frontend
+# Lista de Usuarios con Tarjetas Interactivas
+
+Este proyecto utiliza HTML, CSS y JavaScript para mostrar una lista de usuarios generada aleatoriamente a través de la API de Random User. Cada usuario está representado en una tarjeta interactiva con la posibilidad de buscar usuarios y ver detalles adicionales.
+
+## Contenido
+
+- [Demostración](#demostración)
+- [Cómo Usar](#cómo-usar)
+- [Personalización](#personalización)
+- [Licencia](#licencia)
+
+## Demostración
+
+[Ver Demostración en Vivo](#)  https://js-alvarez.github.io/Intechmom-Prueba-T-cnica-Frontend/
+
+## Cómo Usar
+
+1. Clona este repositorio:
+
+   ```bash
+   git clone https://github.com/Js-Alvarez/Intechmom-Prueba-T-cnica-Frontend
+2. Abrir el Proyecto:
+
+3. Abre el archivo index.html en tu navegador favorito.
+
+4. Explorar la Lista de Usuarios:
+
+Desplázate por la lista de usuarios generada automáticamente.
+Usa la barra de búsqueda para encontrar usuarios específicos.
+
+#Personalización#
+
+*Puedes personalizar este proyecto según tus necesidades:
+
+*Cambiar el Número de Usuarios
+
+* Abre el archivo card.js y modifica el parámetro results en la URL de la API para obtener más o menos usuarios.
+
+fetch('https://randomuser.me/api/?results=8&nat=us&inc=name,picture,gender,dob,location')
+
+*Agregar más Detalles a las Tarjetas:
+
+Abre la función createUserCard en card.js y modifica la estructura HTML dentro de card.innerHTML para incluir más detalles del usuario.
+
+card.innerHTML = `
+    <!-- Estructura HTML modificada con más detalles -->
+`;
+Cambiar Estilos:
+
+Abre el archivo card.css y ajusta los estilos según tus preferencias.

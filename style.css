@@ -71,7 +71,7 @@ main {
     background: #496587; 
     padding: 10px;
     border-radius: 15px;
-    margin-top: 20px;
+    margin-top: 80px;
     position: relative;
     z-index: 11;
 }
@@ -80,12 +80,12 @@ main {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 90%;
+    width: 80%;
     margin-right: 10px;
 }
 
 button {
-    width: 10%;
+    width: 20%;
     padding: 10px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -141,7 +141,7 @@ button {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color:#496587;
+    background-color: #496587;
     border-radius: 25px 25px 0 25px;
 }
 
@@ -153,13 +153,14 @@ button {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color:#496587;
+    background-color: #496587;
 }
 
 .card:hover {
     transform: scale(1.1);
     background: #F16162;
 }
+
 .overlay::after {
     border-radius: 0 25px 0 0;
     background-color: #F16162;
@@ -181,12 +182,13 @@ button {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid#496587;
+    border: 4px solid #496587;
 }
+
 .name {
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: #fff;
 }
 
 .description {
@@ -217,6 +219,7 @@ button {
     }
 
     .menu li {
-        font-size: 14
+        font-size: 14;
     }
 }
+

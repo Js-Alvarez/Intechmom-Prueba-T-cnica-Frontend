@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
    
     function createUserCard(user) {
+        
         const card = document.createElement('article');
         card.classList.add('slider-content');
    
@@ -38,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         return card;
     }
+    card.addEventListener('click', function() {
+        // Aquí puedes implementar la lógica para abrir el modal y mostrar la información detallada del usuario
+    });
 });
 
 function buscarUsuario() {
