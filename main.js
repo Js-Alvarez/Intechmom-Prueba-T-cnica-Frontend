@@ -25,13 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         <span class="overlay"></span>
                         <div class="card-image">
                         <img loading="lazy" src="${user.picture.large}" alt="User Thumbnail" class="card-img">
+                        <h1 class="name">${user.name.first} ${user.name.last}</h1>
                         </div>
                     </div>
                     <div class="card-content">
-                        <h1 class="name">${user.name.first} ${user.name.last}</h1>
                         <p class="description">Género: ${user.gender}</p>
                         <p class="description">Fecha de Nacimiento: ${user.dob.date}</p>
                         <p class="description">Dirección: ${user.location.city}, ${user.location.country}</p>
+                        <p class="description">Email: ${user.email}</p>                     
                     </div>
                 </div>
             </div>

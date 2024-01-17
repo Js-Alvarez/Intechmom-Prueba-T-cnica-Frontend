@@ -50,7 +50,6 @@ body {
 }
 
 header {
-    margin-bottom: 15px;
     background: rgba(73, 101, 135, 0.8);
 }
 
@@ -71,9 +70,9 @@ main {
     background: #496587; 
     padding: 10px;
     border-radius: 15px;
-    margin-top: 80px;
     position: relative;
     z-index: 11;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #searchInput {
@@ -100,6 +99,7 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
     border-radius: 5px;
+    
 }
 
 .slider-content {
@@ -110,10 +110,11 @@ button {
 .card {
     width: 85%;
     height: 100%;
+    margin: 5px;
     border-radius: 25px;
     background-color: #fff;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 1.2s ease-in-out;
 }
 
 .card-image {
@@ -166,7 +167,6 @@ button {
 }
 
 .card:hover {
-    transform: scale(1.1);
     background: #F16162;
 }
 
